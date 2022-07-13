@@ -1,0 +1,43 @@
+body
+{
+	background-color: #000000;
+	font-family: helvetica;
+	color: #ffffff;
+	text-align: center;
+	
+}
+#home
+{
+	float: left;
+	height: 10vh;
+	width: auto;
+}
+#bouton_start
+{
+	height: 80px;
+	width: auto;
+}
+#image_click
+{
+	height: 284px;
+	width: 474px;
+}
+#resultat
+{
+	font-size: 60px;
+}
+#retry
+{
+	height: 80px;
+	width: auto;
+}
+.skill
+{
+	height: 250px;
+	width: auto;
+}
+#spam
+{
+	height: 284px;
+	width: 474px;
+}
