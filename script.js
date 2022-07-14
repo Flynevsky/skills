@@ -25,21 +25,21 @@ function couleur_bouton() {
 function bouton_start() {
 	music1.play();
 	y = 1;
-	date_depart=Date.now();
 	let voila = document.querySelector("#image_click");
 	let start = document.querySelector("#bouton_start");
 	let testtemps=Math.random(10);
 	let temps=(testtemps+3+testtemps)*1000;
+	date_depart=Date.now();
 	sleep(temps);
-	date = Date.now();
 	voila.src="ressources/mathieu_sommet.jpg";
 	music2.play();
+	date = Date.now();
 	x = 1;
 }
 function decision() {
 	if (y==1){
-		let resultat=document.querySelector("#resultat");
 		let date1=Date.now();
+		let resultat=document.querySelector("#resultat");
 		resultat.innerHTML=x;
 		let z = date1-date_depart;
 		let p = date-date_depart;
