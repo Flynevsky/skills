@@ -42,7 +42,7 @@ function decision() {
 		resultat.innerHTML=x;
 		let z = date1-date_depart;
 		let p = date-date_depart;
-		if (z-1==p||z==p||z-2==p){
+		if (z-20<p||z==p){
 			resultat.innerHTML="PERDU<br/>Vous avez appuyé trop tôt";
             x=0;
 			y=0;
