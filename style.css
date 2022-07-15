@@ -9,18 +9,18 @@ body
 #home
 {
 	float: left;
-	height: 10vh;
-	width: auto;
+    width: 5%;
+    height: auto;
 }
 #bouton_start
 {
-	height: 80px;
-	width: auto;
+	height: auto;
+	width: 15%;
 }
 #image_click
 {
-	height: 284px;
-	width: 474px;
+	height: auto;
+	width: 35%;
 }
 #resultat
 {
@@ -28,16 +28,25 @@ body
 }
 #retry
 {
-	height: 80px;
-	width: auto;
+	height: auto;
+	width: 5%;
 }
 .skill
 {
-	height: 250px;
-	width: auto;
+	height: auto;
+	width: 20%;
 }
 #spam
 {
-	height: 284px;
-	width: 474px;
+	height: auto;
+	width: 30%;
+}
+#zone_click
+{
+	background-color :blue;
+}
+#video
+{
+    height: auto;
+	width: 100%;
 }
