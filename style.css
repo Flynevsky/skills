@@ -4,13 +4,15 @@ body
 	font-family: helvetica;
 	color: #ffffff;
 	text-align: center;
+	position: relative;
 	
 }
 #home
 {
-	float: left;
+	left:0px;
     width: 5%;
     height: auto;
+	position: absolute;
 }
 #bouton_start
 {
