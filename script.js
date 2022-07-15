@@ -25,13 +25,12 @@ function couleur_bouton() {
 function bouton_start() {
 	music1.play();
 	y = 1;
-	let voila = document.querySelector("#image_click");
-	let start = document.querySelector("#bouton_start");
+	let voila = document.querySelector("#zone_click");
 	let testtemps=Math.random(10);
 	let temps=(testtemps+3+testtemps)*1000;
 	date_depart=Date.now();
 	sleep(temps);
-	voila.src="ressources/mathieu_sommet.jpg";
+	voila.style.backgroundColor="white";
 	music2.play();
 	date = Date.now();
 	x = 1;
@@ -43,24 +42,24 @@ function decision() {
 		resultat.innerHTML=x;
 		let z = date1-date_depart;
 		let p = date-date_depart;
-		if (z-1==p||z==p){
+		if (z-1==p||z==p||z-2==p){
 			resultat.innerHTML="PERDU<br/>Vous avez appuyé trop tôt";
+            x=0;
 			y=0;
 		}
 		else{
 			let reactivite=date1-date;
 			resultat.innerHTML=reactivite;
-			x = 0;
+			x=0;
 			y=0;
 		}
 	}
 }
 function retry() {
-	let voila = document.querySelector("#image_click");
-	voila.src="ressources/antoine_daniel.jpg";
+	let voila = document.querySelector("#zone_click");
+	voila.style.backgroundColor="blue";
 	let resultat=document.querySelector("#resultat");
 	resultat.innerHTML="";
-	y=1;
 }
 function retry1() {
 	let resultat=document.querySelector("#resultat");
