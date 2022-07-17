@@ -2,6 +2,7 @@ let x = 0;
 let y = 0;
 t = 0;
 l = 0;
+start = document.querySelector("#bouton_start");
 const music = new Audio('ressources/autoroute.mp3');
 const music1 = new Audio('ressources/antoine_daniel.mp3');
 const music2 = new Audio('ressources/chat.mp3');
@@ -20,7 +21,7 @@ function sleep(milliseconds) {
 }
 function couleur_bouton() {
 	let start = document.querySelector("#bouton_start");
-	start.src="ressources/start1.png";
+	start.src='ressources/start1.png';
 }
 function bouton_start() {
 	music1.play();
@@ -60,6 +61,8 @@ function retry() {
 	voila.style.backgroundColor="blue";
 	let resultat=document.querySelector("#resultat");
 	resultat.innerHTML="";
+	let start = document.querySelector("#bouton_start");
+	start.src="ressources/start.png";
 }
 function retry1() {
 	let resultat=document.querySelector("#resultat");
