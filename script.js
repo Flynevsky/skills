@@ -19,10 +19,6 @@ function sleep(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-function couleur_bouton() {
-	let start = document.querySelector("#bouton_start");
-	start.src='ressources/start1.png';
-}
 function bouton_start() {
 	music1.play();
 	y = 1;
