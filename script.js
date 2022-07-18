@@ -150,6 +150,34 @@ function start_case_debut() {
     	element = document.querySelector('#count-down-timer');
     	element.textContent = `${paddedFormat(time_minutes)}:${paddedFormat(time_seconds)}`;
 		startCountDown(--duration, element);
+		let b = getRandomInt(90);
+		let numero = b+1;
+		numero.toString();
+		var o ="#case_";
+		numero_1=o.concat(numero);
+		while (s==numero_1){
+			let b = getRandomInt(90);
+			let numero = b+1;
+			numero.toString();
+			var o ="#case_";
+			numero_1=o.concat(numero);
+		}
+		let mo=document.querySelector(numero_1);
+		mo.style.backgroundColor="white";
+		let aze = getRandomInt(90);
+		let numero_2 = aze+1;
+		numero_2.toString();
+		var eza ="#case_";
+		numero_3=eza.concat(numero_2);
+		while (s==numero_3||numero_1==numero_3){
+			let aze = getRandomInt(90);
+			let numero_2 = aze+1;
+			numero_2.toString();
+			var eza ="#case_";
+			numero_3=eza.concat(numero_2);
+		}
+		let mot=document.querySelector(numero_3);
+		mot.style.backgroundColor="white";
 	}
 }
 function retry2(){
@@ -181,6 +209,44 @@ function start_case() {
 	let m=document.querySelector(s);
 	m.style.backgroundColor="white";
 }
+function start_case_num() {
+	let w = s;
+	let pd = numero_1;
+	let b = getRandomInt(90);
+	let numero = b+1;
+	numero.toString();
+	var o ="#case_";
+	numero_1=o.concat(numero);
+	while (w==numero_1||pd==numero_1){
+		let b = getRandomInt(90);
+		let numero = b+1;
+		numero.toString();
+		var o ="#case_";
+		numero_1=o.concat(numero);
+	}
+	let mo=document.querySelector(numero_1);
+	mo.style.backgroundColor="white";	
+}
+function start_case_num_2() {
+	let w = s;
+	let pd = numero_1;
+	let ae = numero_3;
+	let aze = getRandomInt(90);
+	let numero_2 = aze+1;
+	numero_2.toString();
+	var eza ="#case_";
+	numero_3=eza.concat(numero_2);
+	while (w==numero_3||pd==numero_3||ae==numero_3){
+		let aze = getRandomInt(90);
+		let numero_2 = aze+1;
+		numero_2.toString();
+		var eza ="#case_";
+		numero_3=eza.concat(numero_2);
+	}
+	let mot=document.querySelector(numero_3);
+	mot.style.backgroundColor="white";	
+}
+
 function end() {
 	let resultat_point=document.querySelector("#points");
 	g.toString();
@@ -217,29 +283,6 @@ function startCountDown(duration, element) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function case_1() {
 	if (l==0){
 		if (s=='#case_1') {
@@ -248,6 +291,32 @@ function case_1() {
 			case_1.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_1') {
+			g=g+1;
+			let case_1=document.querySelector('#case_1');
+			case_1.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_1') {
+			g=g+1;
+			let case_1=document.querySelector('#case_1');
+			case_1.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -272,6 +341,32 @@ function case_2() {
 				end();
 			}
 		}
+		if (numero_1=='#case_2') {
+			g=g+1;
+			let case_2=document.querySelector('#case_2');
+			case_2.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_2') {
+			g=g+1;
+			let case_2=document.querySelector('#case_2');
+			case_2.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_3() {
@@ -282,6 +377,32 @@ function case_3() {
 			case_3.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_3') {
+			g=g+1;
+			let case_3=document.querySelector('#case_3');
+			case_3.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_3') {
+			g=g+1;
+			let case_3=document.querySelector('#case_3');
+			case_3.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -306,6 +427,32 @@ function case_4() {
 				end();
 			}
 		}
+		if (numero_1=='#case_4') {
+			g=g+1;
+			let case_4=document.querySelector('#case_4');
+			case_4.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_4') {
+			g=g+1;
+			let case_4=document.querySelector('#case_4');
+			case_4.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_5() {
@@ -316,6 +463,32 @@ function case_5() {
 			case_5.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_5') {
+			g=g+1;
+			let case_5=document.querySelector('#case_5');
+			case_5.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_5') {
+			g=g+1;
+			let case_5=document.querySelector('#case_5');
+			case_5.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -340,6 +513,32 @@ function case_6() {
 				end();
 			}
 		}
+		if (numero_1=='#case_6') {
+			g=g+1;
+			let case_6=document.querySelector('#case_6');
+			case_6.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_6') {
+			g=g+1;
+			let case_6=document.querySelector('#case_6');
+			case_6.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_7() {
@@ -350,6 +549,32 @@ function case_7() {
 			case_7.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_7') {
+			g=g+1;
+			let case_7=document.querySelector('#case_7');
+			case_7.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_7') {
+			g=g+1;
+			let case_7=document.querySelector('#case_7');
+			case_7.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -374,6 +599,32 @@ function case_8() {
 				end();
 			}
 		}
+		if (numero_1=='#case_8') {
+			g=g+1;
+			let case_8=document.querySelector('#case_8');
+			case_8.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_8') {
+			g=g+1;
+			let case_8=document.querySelector('#case_8');
+			case_8.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_9() {
@@ -384,6 +635,32 @@ function case_9() {
 			case_9.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_9') {
+			g=g+1;
+			let case_9=document.querySelector('#case_9');
+			case_9.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_9') {
+			g=g+1;
+			let case_9=document.querySelector('#case_9');
+			case_9.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -408,6 +685,32 @@ function case_10() {
 				end();
 			}
 		}
+		if (numero_1=='#case_10') {
+			g=g+1;
+			let case_10=document.querySelector('#case_10');
+			case_10.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_10') {
+			g=g+1;
+			let case_10=document.querySelector('#case_10');
+			case_10.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_11() {
@@ -418,6 +721,32 @@ function case_11() {
 			case_11.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_11') {
+			g=g+1;
+			let case_11=document.querySelector('#case_11');
+			case_11.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_11') {
+			g=g+1;
+			let case_11=document.querySelector('#case_11');
+			case_11.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -442,6 +771,32 @@ function case_12() {
 				end();
 			}
 		}
+		if (numero_1=='#case_12') {
+			g=g+1;
+			let case_12=document.querySelector('#case_12');
+			case_12.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_12') {
+			g=g+1;
+			let case_12=document.querySelector('#case_12');
+			case_12.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_13() {
@@ -452,6 +807,32 @@ function case_13() {
 			case_13.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_13') {
+			g=g+1;
+			let case_13=document.querySelector('#case_13');
+			case_13.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_13') {
+			g=g+1;
+			let case_13=document.querySelector('#case_13');
+			case_13.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -476,6 +857,32 @@ function case_14() {
 				end();
 			}
 		}
+		if (numero_1=='#case_14') {
+			g=g+1;
+			let case_14=document.querySelector('#case_14');
+			case_14.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_14') {
+			g=g+1;
+			let case_14=document.querySelector('#case_14');
+			case_14.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_15() {
@@ -486,6 +893,32 @@ function case_15() {
 			case_15.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_15') {
+			g=g+1;
+			let case_15=document.querySelector('#case_15');
+			case_15.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_15') {
+			g=g+1;
+			let case_15=document.querySelector('#case_15');
+			case_15.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -510,6 +943,32 @@ function case_16() {
 				end();
 			}
 		}
+		if (numero_1=='#case_16') {
+			g=g+1;
+			let case_16=document.querySelector('#case_16');
+			case_16.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_16') {
+			g=g+1;
+			let case_16=document.querySelector('#case_16');
+			case_16.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_17() {
@@ -520,6 +979,32 @@ function case_17() {
 			case_17.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_17') {
+			g=g+1;
+			let case_17=document.querySelector('#case_17');
+			case_17.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_17') {
+			g=g+1;
+			let case_17=document.querySelector('#case_17');
+			case_17.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -544,6 +1029,32 @@ function case_18() {
 				end();
 			}
 		}
+		if (numero_1=='#case_18') {
+			g=g+1;
+			let case_18=document.querySelector('#case_18');
+			case_18.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_18') {
+			g=g+1;
+			let case_18=document.querySelector('#case_18');
+			case_18.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_19() {
@@ -554,6 +1065,32 @@ function case_19() {
 			case_19.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_19') {
+			g=g+1;
+			let case_19=document.querySelector('#case_19');
+			case_19.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_19') {
+			g=g+1;
+			let case_19=document.querySelector('#case_19');
+			case_19.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -578,6 +1115,32 @@ function case_20() {
 				end();
 			}
 		}
+		if (numero_1=='#case_20') {
+			g=g+1;
+			let case_20=document.querySelector('#case_20');
+			case_20.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_20') {
+			g=g+1;
+			let case_20=document.querySelector('#case_20');
+			case_20.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_21() {
@@ -588,6 +1151,32 @@ function case_21() {
 			case_21.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_21') {
+			g=g+1;
+			let case_21=document.querySelector('#case_21');
+			case_21.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_21') {
+			g=g+1;
+			let case_21=document.querySelector('#case_21');
+			case_21.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -612,6 +1201,32 @@ function case_22() {
 				end();
 			}
 		}
+		if (numero_1=='#case_22') {
+			g=g+1;
+			let case_22=document.querySelector('#case_22');
+			case_22.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_22') {
+			g=g+1;
+			let case_22=document.querySelector('#case_22');
+			case_22.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_23() {
@@ -622,6 +1237,32 @@ function case_23() {
 			case_23.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_23') {
+			g=g+1;
+			let case_23=document.querySelector('#case_23');
+			case_23.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_23') {
+			g=g+1;
+			let case_23=document.querySelector('#case_23');
+			case_23.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -646,6 +1287,32 @@ function case_24() {
 				end();
 			}
 		}
+		if (numero_1=='#case_24') {
+			g=g+1;
+			let case_24=document.querySelector('#case_24');
+			case_24.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_24') {
+			g=g+1;
+			let case_24=document.querySelector('#case_24');
+			case_24.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_25() {
@@ -656,6 +1323,32 @@ function case_25() {
 			case_25.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_25') {
+			g=g+1;
+			let case_25=document.querySelector('#case_25');
+			case_25.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_25') {
+			g=g+1;
+			let case_25=document.querySelector('#case_25');
+			case_25.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -680,6 +1373,32 @@ function case_26() {
 				end();
 			}
 		}
+		if (numero_1=='#case_26') {
+			g=g+1;
+			let case_26=document.querySelector('#case_26');
+			case_26.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_26') {
+			g=g+1;
+			let case_26=document.querySelector('#case_26');
+			case_26.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_27() {
@@ -690,6 +1409,32 @@ function case_27() {
 			case_27.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_27') {
+			g=g+1;
+			let case_27=document.querySelector('#case_27');
+			case_27.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_27') {
+			g=g+1;
+			let case_27=document.querySelector('#case_27');
+			case_27.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -714,6 +1459,32 @@ function case_28() {
 				end();
 			}
 		}
+		if (numero_1=='#case_28') {
+			g=g+1;
+			let case_28=document.querySelector('#case_28');
+			case_28.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_28') {
+			g=g+1;
+			let case_28=document.querySelector('#case_28');
+			case_28.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_29() {
@@ -724,6 +1495,32 @@ function case_29() {
 			case_29.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_29') {
+			g=g+1;
+			let case_29=document.querySelector('#case_29');
+			case_29.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_29') {
+			g=g+1;
+			let case_29=document.querySelector('#case_29');
+			case_29.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -748,6 +1545,32 @@ function case_30() {
 				end();
 			}
 		}
+		if (numero_1=='#case_30') {
+			g=g+1;
+			let case_30=document.querySelector('#case_30');
+			case_30.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_30') {
+			g=g+1;
+			let case_30=document.querySelector('#case_30');
+			case_30.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_31() {
@@ -758,6 +1581,32 @@ function case_31() {
 			case_31.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_31') {
+			g=g+1;
+			let case_31=document.querySelector('#case_31');
+			case_31.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_31') {
+			g=g+1;
+			let case_31=document.querySelector('#case_31');
+			case_31.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -782,6 +1631,32 @@ function case_32() {
 				end();
 			}
 		}
+		if (numero_1=='#case_32') {
+			g=g+1;
+			let case_32=document.querySelector('#case_32');
+			case_32.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_32') {
+			g=g+1;
+			let case_32=document.querySelector('#case_32');
+			case_32.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_33() {
@@ -792,6 +1667,32 @@ function case_33() {
 			case_33.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_33') {
+			g=g+1;
+			let case_33=document.querySelector('#case_33');
+			case_33.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_33') {
+			g=g+1;
+			let case_33=document.querySelector('#case_33');
+			case_33.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -816,6 +1717,32 @@ function case_34() {
 				end();
 			}
 		}
+		if (numero_1=='#case_34') {
+			g=g+1;
+			let case_34=document.querySelector('#case_34');
+			case_34.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_34') {
+			g=g+1;
+			let case_34=document.querySelector('#case_34');
+			case_34.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_35() {
@@ -826,6 +1753,32 @@ function case_35() {
 			case_35.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_35') {
+			g=g+1;
+			let case_35=document.querySelector('#case_35');
+			case_35.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_35') {
+			g=g+1;
+			let case_35=document.querySelector('#case_35');
+			case_35.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -850,6 +1803,32 @@ function case_36() {
 				end();
 			}
 		}
+		if (numero_1=='#case_36') {
+			g=g+1;
+			let case_36=document.querySelector('#case_36');
+			case_36.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_36') {
+			g=g+1;
+			let case_36=document.querySelector('#case_36');
+			case_36.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_37() {
@@ -860,6 +1839,32 @@ function case_37() {
 			case_37.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_37') {
+			g=g+1;
+			let case_37=document.querySelector('#case_37');
+			case_37.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_37') {
+			g=g+1;
+			let case_37=document.querySelector('#case_37');
+			case_37.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -884,6 +1889,32 @@ function case_38() {
 				end();
 			}
 		}
+		if (numero_1=='#case_38') {
+			g=g+1;
+			let case_38=document.querySelector('#case_38');
+			case_38.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_38') {
+			g=g+1;
+			let case_38=document.querySelector('#case_38');
+			case_38.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_39() {
@@ -894,6 +1925,32 @@ function case_39() {
 			case_39.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_39') {
+			g=g+1;
+			let case_39=document.querySelector('#case_39');
+			case_39.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_39') {
+			g=g+1;
+			let case_39=document.querySelector('#case_39');
+			case_39.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -918,6 +1975,32 @@ function case_40() {
 				end();
 			}
 		}
+		if (numero_1=='#case_40') {
+			g=g+1;
+			let case_40=document.querySelector('#case_40');
+			case_40.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_40') {
+			g=g+1;
+			let case_40=document.querySelector('#case_40');
+			case_40.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_41() {
@@ -928,6 +2011,32 @@ function case_41() {
 			case_41.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_41') {
+			g=g+1;
+			let case_41=document.querySelector('#case_41');
+			case_41.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_41') {
+			g=g+1;
+			let case_41=document.querySelector('#case_41');
+			case_41.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -952,6 +2061,32 @@ function case_42() {
 				end();
 			}
 		}
+		if (numero_1=='#case_42') {
+			g=g+1;
+			let case_42=document.querySelector('#case_42');
+			case_42.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_42') {
+			g=g+1;
+			let case_42=document.querySelector('#case_42');
+			case_42.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_43() {
@@ -962,6 +2097,32 @@ function case_43() {
 			case_43.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_43') {
+			g=g+1;
+			let case_43=document.querySelector('#case_43');
+			case_43.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_43') {
+			g=g+1;
+			let case_43=document.querySelector('#case_43');
+			case_43.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -986,6 +2147,32 @@ function case_44() {
 				end();
 			}
 		}
+		if (numero_1=='#case_44') {
+			g=g+1;
+			let case_44=document.querySelector('#case_44');
+			case_44.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_44') {
+			g=g+1;
+			let case_44=document.querySelector('#case_44');
+			case_44.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_45() {
@@ -996,6 +2183,32 @@ function case_45() {
 			case_45.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_45') {
+			g=g+1;
+			let case_45=document.querySelector('#case_45');
+			case_45.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_45') {
+			g=g+1;
+			let case_45=document.querySelector('#case_45');
+			case_45.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1020,6 +2233,32 @@ function case_46() {
 				end();
 			}
 		}
+		if (numero_1=='#case_46') {
+			g=g+1;
+			let case_46=document.querySelector('#case_46');
+			case_46.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_46') {
+			g=g+1;
+			let case_46=document.querySelector('#case_46');
+			case_46.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_47() {
@@ -1030,6 +2269,32 @@ function case_47() {
 			case_47.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_47') {
+			g=g+1;
+			let case_47=document.querySelector('#case_47');
+			case_47.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_47') {
+			g=g+1;
+			let case_47=document.querySelector('#case_47');
+			case_47.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1054,6 +2319,32 @@ function case_48() {
 				end();
 			}
 		}
+		if (numero_1=='#case_48') {
+			g=g+1;
+			let case_48=document.querySelector('#case_48');
+			case_48.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_48') {
+			g=g+1;
+			let case_48=document.querySelector('#case_48');
+			case_48.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_49() {
@@ -1064,6 +2355,32 @@ function case_49() {
 			case_49.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_49') {
+			g=g+1;
+			let case_49=document.querySelector('#case_49');
+			case_49.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_49') {
+			g=g+1;
+			let case_49=document.querySelector('#case_49');
+			case_49.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1088,6 +2405,32 @@ function case_50() {
 				end();
 			}
 		}
+		if (numero_1=='#case_50') {
+			g=g+1;
+			let case_50=document.querySelector('#case_50');
+			case_50.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_50') {
+			g=g+1;
+			let case_50=document.querySelector('#case_50');
+			case_50.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_51() {
@@ -1098,6 +2441,32 @@ function case_51() {
 			case_51.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_51') {
+			g=g+1;
+			let case_51=document.querySelector('#case_51');
+			case_51.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_51') {
+			g=g+1;
+			let case_51=document.querySelector('#case_51');
+			case_51.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1122,6 +2491,32 @@ function case_52() {
 				end();
 			}
 		}
+		if (numero_1=='#case_52') {
+			g=g+1;
+			let case_52=document.querySelector('#case_52');
+			case_52.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_52') {
+			g=g+1;
+			let case_52=document.querySelector('#case_52');
+			case_52.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_53() {
@@ -1132,6 +2527,32 @@ function case_53() {
 			case_53.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_53') {
+			g=g+1;
+			let case_53=document.querySelector('#case_53');
+			case_53.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_53') {
+			g=g+1;
+			let case_53=document.querySelector('#case_53');
+			case_53.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1156,6 +2577,32 @@ function case_54() {
 				end();
 			}
 		}
+		if (numero_1=='#case_54') {
+			g=g+1;
+			let case_54=document.querySelector('#case_54');
+			case_54.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_54') {
+			g=g+1;
+			let case_54=document.querySelector('#case_54');
+			case_54.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_55() {
@@ -1166,6 +2613,32 @@ function case_55() {
 			case_55.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_55') {
+			g=g+1;
+			let case_55=document.querySelector('#case_55');
+			case_55.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_55') {
+			g=g+1;
+			let case_55=document.querySelector('#case_55');
+			case_55.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1190,6 +2663,32 @@ function case_56() {
 				end();
 			}
 		}
+		if (numero_1=='#case_56') {
+			g=g+1;
+			let case_56=document.querySelector('#case_56');
+			case_56.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_56') {
+			g=g+1;
+			let case_56=document.querySelector('#case_56');
+			case_56.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_57() {
@@ -1200,6 +2699,32 @@ function case_57() {
 			case_57.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_57') {
+			g=g+1;
+			let case_57=document.querySelector('#case_57');
+			case_57.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_57') {
+			g=g+1;
+			let case_57=document.querySelector('#case_57');
+			case_57.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1224,6 +2749,32 @@ function case_58() {
 				end();
 			}
 		}
+		if (numero_1=='#case_58') {
+			g=g+1;
+			let case_58=document.querySelector('#case_58');
+			case_58.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_58') {
+			g=g+1;
+			let case_58=document.querySelector('#case_58');
+			case_58.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_59() {
@@ -1234,6 +2785,32 @@ function case_59() {
 			case_59.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_59') {
+			g=g+1;
+			let case_59=document.querySelector('#case_59');
+			case_59.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_59') {
+			g=g+1;
+			let case_59=document.querySelector('#case_59');
+			case_59.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1258,6 +2835,32 @@ function case_60() {
 				end();
 			}
 		}
+		if (numero_1=='#case_60') {
+			g=g+1;
+			let case_60=document.querySelector('#case_60');
+			case_60.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_60') {
+			g=g+1;
+			let case_60=document.querySelector('#case_60');
+			case_60.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_61() {
@@ -1268,6 +2871,32 @@ function case_61() {
 			case_61.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_61') {
+			g=g+1;
+			let case_61=document.querySelector('#case_61');
+			case_61.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_61') {
+			g=g+1;
+			let case_61=document.querySelector('#case_61');
+			case_61.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1292,6 +2921,32 @@ function case_62() {
 				end();
 			}
 		}
+		if (numero_1=='#case_62') {
+			g=g+1;
+			let case_62=document.querySelector('#case_62');
+			case_62.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_62') {
+			g=g+1;
+			let case_62=document.querySelector('#case_62');
+			case_62.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_63() {
@@ -1302,6 +2957,32 @@ function case_63() {
 			case_63.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_63') {
+			g=g+1;
+			let case_63=document.querySelector('#case_63');
+			case_63.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_63') {
+			g=g+1;
+			let case_63=document.querySelector('#case_63');
+			case_63.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1326,6 +3007,32 @@ function case_64() {
 				end();
 			}
 		}
+		if (numero_1=='#case_64') {
+			g=g+1;
+			let case_64=document.querySelector('#case_64');
+			case_64.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_64') {
+			g=g+1;
+			let case_64=document.querySelector('#case_64');
+			case_64.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_65() {
@@ -1336,6 +3043,32 @@ function case_65() {
 			case_65.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_65') {
+			g=g+1;
+			let case_65=document.querySelector('#case_65');
+			case_65.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_65') {
+			g=g+1;
+			let case_65=document.querySelector('#case_65');
+			case_65.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1360,6 +3093,32 @@ function case_66() {
 				end();
 			}
 		}
+		if (numero_1=='#case_66') {
+			g=g+1;
+			let case_66=document.querySelector('#case_66');
+			case_66.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_66') {
+			g=g+1;
+			let case_66=document.querySelector('#case_66');
+			case_66.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_67() {
@@ -1370,6 +3129,32 @@ function case_67() {
 			case_67.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_67') {
+			g=g+1;
+			let case_67=document.querySelector('#case_67');
+			case_67.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_67') {
+			g=g+1;
+			let case_67=document.querySelector('#case_67');
+			case_67.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1394,6 +3179,32 @@ function case_68() {
 				end();
 			}
 		}
+		if (numero_1=='#case_68') {
+			g=g+1;
+			let case_68=document.querySelector('#case_68');
+			case_68.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_68') {
+			g=g+1;
+			let case_68=document.querySelector('#case_68');
+			case_68.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_69() {
@@ -1404,6 +3215,32 @@ function case_69() {
 			case_69.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_69') {
+			g=g+1;
+			let case_69=document.querySelector('#case_69');
+			case_69.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_69') {
+			g=g+1;
+			let case_69=document.querySelector('#case_69');
+			case_69.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1428,6 +3265,32 @@ function case_70() {
 				end();
 			}
 		}
+		if (numero_1=='#case_70') {
+			g=g+1;
+			let case_70=document.querySelector('#case_70');
+			case_70.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_70') {
+			g=g+1;
+			let case_70=document.querySelector('#case_70');
+			case_70.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_71() {
@@ -1438,6 +3301,32 @@ function case_71() {
 			case_71.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_71') {
+			g=g+1;
+			let case_71=document.querySelector('#case_71');
+			case_71.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_71') {
+			g=g+1;
+			let case_71=document.querySelector('#case_71');
+			case_71.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1462,6 +3351,32 @@ function case_72() {
 				end();
 			}
 		}
+		if (numero_1=='#case_72') {
+			g=g+1;
+			let case_72=document.querySelector('#case_72');
+			case_72.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_72') {
+			g=g+1;
+			let case_72=document.querySelector('#case_72');
+			case_72.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_73() {
@@ -1472,6 +3387,32 @@ function case_73() {
 			case_73.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_73') {
+			g=g+1;
+			let case_73=document.querySelector('#case_73');
+			case_73.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_73') {
+			g=g+1;
+			let case_73=document.querySelector('#case_73');
+			case_73.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1496,6 +3437,32 @@ function case_74() {
 				end();
 			}
 		}
+		if (numero_1=='#case_74') {
+			g=g+1;
+			let case_74=document.querySelector('#case_74');
+			case_74.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_74') {
+			g=g+1;
+			let case_74=document.querySelector('#case_74');
+			case_74.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_75() {
@@ -1506,6 +3473,32 @@ function case_75() {
 			case_75.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_75') {
+			g=g+1;
+			let case_75=document.querySelector('#case_75');
+			case_75.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_75') {
+			g=g+1;
+			let case_75=document.querySelector('#case_75');
+			case_75.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1530,6 +3523,32 @@ function case_76() {
 				end();
 			}
 		}
+		if (numero_1=='#case_76') {
+			g=g+1;
+			let case_76=document.querySelector('#case_76');
+			case_76.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_76') {
+			g=g+1;
+			let case_76=document.querySelector('#case_76');
+			case_76.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_77() {
@@ -1540,6 +3559,32 @@ function case_77() {
 			case_77.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_77') {
+			g=g+1;
+			let case_77=document.querySelector('#case_77');
+			case_77.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_77') {
+			g=g+1;
+			let case_77=document.querySelector('#case_77');
+			case_77.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1564,6 +3609,32 @@ function case_78() {
 				end();
 			}
 		}
+		if (numero_1=='#case_78') {
+			g=g+1;
+			let case_78=document.querySelector('#case_78');
+			case_78.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_78') {
+			g=g+1;
+			let case_78=document.querySelector('#case_78');
+			case_78.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_79() {
@@ -1574,6 +3645,32 @@ function case_79() {
 			case_79.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_79') {
+			g=g+1;
+			let case_79=document.querySelector('#case_79');
+			case_79.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_79') {
+			g=g+1;
+			let case_79=document.querySelector('#case_79');
+			case_79.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1598,6 +3695,32 @@ function case_80() {
 				end();
 			}
 		}
+		if (numero_1=='#case_80') {
+			g=g+1;
+			let case_80=document.querySelector('#case_80');
+			case_80.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_80') {
+			g=g+1;
+			let case_80=document.querySelector('#case_80');
+			case_80.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_81() {
@@ -1608,6 +3731,32 @@ function case_81() {
 			case_81.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_81') {
+			g=g+1;
+			let case_81=document.querySelector('#case_81');
+			case_81.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_81') {
+			g=g+1;
+			let case_81=document.querySelector('#case_81');
+			case_81.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1632,6 +3781,32 @@ function case_82() {
 				end();
 			}
 		}
+		if (numero_1=='#case_82') {
+			g=g+1;
+			let case_82=document.querySelector('#case_82');
+			case_82.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_82') {
+			g=g+1;
+			let case_82=document.querySelector('#case_82');
+			case_82.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_83() {
@@ -1642,6 +3817,32 @@ function case_83() {
 			case_83.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_83') {
+			g=g+1;
+			let case_83=document.querySelector('#case_83');
+			case_83.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_83') {
+			g=g+1;
+			let case_83=document.querySelector('#case_83');
+			case_83.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1666,6 +3867,32 @@ function case_84() {
 				end();
 			}
 		}
+		if (numero_1=='#case_84') {
+			g=g+1;
+			let case_84=document.querySelector('#case_84');
+			case_84.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_84') {
+			g=g+1;
+			let case_84=document.querySelector('#case_84');
+			case_84.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_85() {
@@ -1676,6 +3903,32 @@ function case_85() {
 			case_85.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_85') {
+			g=g+1;
+			let case_85=document.querySelector('#case_85');
+			case_85.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_85') {
+			g=g+1;
+			let case_85=document.querySelector('#case_85');
+			case_85.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1700,6 +3953,32 @@ function case_86() {
 				end();
 			}
 		}
+		if (numero_1=='#case_86') {
+			g=g+1;
+			let case_86=document.querySelector('#case_86');
+			case_86.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_86') {
+			g=g+1;
+			let case_86=document.querySelector('#case_86');
+			case_86.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_87() {
@@ -1710,6 +3989,32 @@ function case_87() {
 			case_87.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_87') {
+			g=g+1;
+			let case_87=document.querySelector('#case_87');
+			case_87.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_87') {
+			g=g+1;
+			let case_87=document.querySelector('#case_87');
+			case_87.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
@@ -1734,6 +4039,32 @@ function case_88() {
 				end();
 			}
 		}
+		if (numero_1=='#case_88') {
+			g=g+1;
+			let case_88=document.querySelector('#case_88');
+			case_88.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_88') {
+			g=g+1;
+			let case_88=document.querySelector('#case_88');
+			case_88.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_89() {
@@ -1751,6 +4082,32 @@ function case_89() {
 				end();
 			}
 		}
+		if (numero_1=='#case_89') {
+			g=g+1;
+			let case_89=document.querySelector('#case_89');
+			case_89.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_89') {
+			g=g+1;
+			let case_89=document.querySelector('#case_89');
+			case_89.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
 	}
 }
 function case_90() {
@@ -1761,6 +4118,32 @@ function case_90() {
 			case_90.style.backgroundColor='black';
 			resultat_points.innerHTML=g;
 			start_case();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_1=='#case_90') {
+			g=g+1;
+			let case_90=document.querySelector('#case_90');
+			case_90.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num();
+			let date1 = Date.now();
+			let h = date1-d;
+			if (h>30000){
+				l = 1;
+				end();
+			}
+		}
+		if (numero_3=='#case_90') {
+			g=g+1;
+			let case_90=document.querySelector('#case_90');
+			case_90.style.backgroundColor='black';
+			resultat_points.innerHTML=g;
+			start_case_num_2();
 			let date1 = Date.now();
 			let h = date1-d;
 			if (h>30000){
