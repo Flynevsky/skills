@@ -9,9 +9,14 @@ body
 }
 #home
 {
-	left:0px;
+	left:5px;
     width: 5%;
     height: auto;
+	position: absolute;
+}
+#count-down-timer
+{
+	right:20px;
 	position: absolute;
 }
 #bouton_start
@@ -51,4 +56,22 @@ body
 {
     height: auto;
 	width: 70%;
+}
+table
+{
+	text-align: center;
+	border-collapse: collapse;
+}
+td, th
+{
+    border: 1px solid white;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+img.case
+{
+	height: auto;
+	width: 100px;
 }
