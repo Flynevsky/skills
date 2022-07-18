@@ -184,6 +184,10 @@ function retry2(){
 	g=0;
 	let m=document.querySelector(s);
 	m.style.backgroundColor="black";
+	let mot=document.querySelector(numero_3);
+	mot.style.backgroundColor="black";
+	let mo=document.querySelector(numero_1);
+	mo.style.backgroundColor="black";
 	resultat_points.innerHTML="";
 	y=1;
 	q=0;
@@ -257,6 +261,10 @@ function end() {
 	resultat_points.innerHTML=c;
 	let m=document.querySelector(s);
 	m.style.backgroundColor="black";
+	let mot=document.querySelector(numero_3);
+	mot.style.backgroundColor="black";
+	let mo=document.querySelector(numero_1);
+	mo.style.backgroundColor="black";
 }
 function paddedFormat(num) {
     return num < 10 ? "0" + num : num; 
