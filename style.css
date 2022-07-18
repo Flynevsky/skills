@@ -10,8 +10,8 @@ body
 #home
 {
 	left:5px;
-    width: 5%;
-    height: auto;
+	width: 5%;
+	height: auto;
 	position: absolute;
 }
 #count-down-timer
@@ -54,7 +54,7 @@ body
 }
 #video
 {
-    height: auto;
+	height: auto;
 	width: 70%;
 }
 table
@@ -64,11 +64,11 @@ table
 }
 td, th
 {
-    border: 1px solid white;
+	border: 1px solid white;
 }
 table.center {
-  margin-left: auto;
-  margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 img.case
 {
